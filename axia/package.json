@@ -1,0 +1,51 @@
+{
+    "name": "axia",
+    "version": "1.0.0",
+    "description": "Tokeniza Smart Contracts",
+    "license": "Apache-2.0",
+    "private": true,
+    "author": {
+        "name": "Mateus Santos",
+        "email": "mateus@axiadigitalsolutions.com"
+    },
+    "scripts": {
+        "test": "truffle test",
+        "compile": "truffle compile",
+        "migrate": "truffle migrate",
+        "console": "truffle console",
+        "texec": "truffle exec",
+        "lint:js": "eslint .",
+        "lint:sol": "solium -d .",
+        "lint": "npm run lint:js && npm run lint:sol",
+        "build:test": "scripts/test.sh",
+        "build:coverage": "SOLIDITY_COVERAGE=true scripts/test.sh"
+    },
+    "dependencies": {
+        "openzeppelin-solidity": "2.4.0",
+        "truffle-hdwallet-provider": "^1.0.17"
+    },
+    "devDependencies": {
+        "bn.js": "5.0.0",
+        "chai": "4.2.0",
+        "coveralls": "3.0.1",
+        "eslint": "4.19.1",
+        "eslint-config-standard": "10.2.1",
+        "eslint-plugin-import": "2.13.0",
+        "eslint-plugin-mocha-no-only": "1.1.0",
+        "eslint-plugin-node": "5.2.1",
+        "eslint-plugin-promise": "3.8.0",
+        "eslint-plugin-standard": "3.1.0",
+        "ethereumjs-testrpc-sc": "6.5.1-sc.1",
+        "ganache-cli": "6.9.1",
+        "openzeppelin-test-helpers": "0.5.1",
+        "solidity-coverage": "0.7.12",
+        "solium": "1.2.5",
+        "truffle": "5.1.1",
+        "web3": "^1.3.5",
+        "webpack": "4.28.4"
+    },
+    "resolutions": {
+        "braces": "2.3.1",
+        "mem": "4.0.0"
+    }
+}
